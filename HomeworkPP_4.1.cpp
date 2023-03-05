@@ -96,7 +96,7 @@ private:
     unsigned long m_size;
 };
 
-TEST_CASE("test factorial", "[factorial]") {
+TEST_CASE("test List", "[List]") {
     List mylist;
     SECTION("check empty") {
         CHECK(mylist.Empty() == true);
@@ -113,7 +113,6 @@ TEST_CASE("test factorial", "[factorial]") {
         CHECK(mylist.Size() == 0);
     }
 }
-
 
 int main(int argc, char* argv[]) { 
     Catch::Session().run(argc, argv);
