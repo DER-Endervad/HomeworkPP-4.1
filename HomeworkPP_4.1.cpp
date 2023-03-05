@@ -114,8 +114,8 @@ TEST_CASE("test List", "[List]") {
     }
 }
 
-int main(int argc, char* argv[]) { 
-    Catch::Session().run(argc, argv);
-    int t = 0;
-    std::cin >> t;
+int main(int argc, char* argv[]) {
+    Catch::Session().run(argc, argv); // если убрать этот код, то консоль откроется и сразу закроется, не показав мне проверки.
+    system("pause");
+    return Catch::Session().run(argc, argv);
 }
