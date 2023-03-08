@@ -115,7 +115,7 @@ TEST_CASE("test List", "[List]") {
 }
 
 int main(int argc, char* argv[]) {
-    Catch::Session().run(argc, argv); // если убрать этот код, то консоль откроется и сразу закроется, не показав мне проверки.
+    auto returns = Catch::Session().run(argc, argv);
     system("pause");
-    return Catch::Session().run(argc, argv);
+    return returns;
 }
